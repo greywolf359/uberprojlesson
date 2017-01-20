@@ -7,7 +7,6 @@ before(done=>{
 		.once('open', ()=> done())
 		.on('error', (err)=> {
 			console.warn(err);
-			done();
 		})
 })
 
