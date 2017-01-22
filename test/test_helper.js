@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
+console.log('process', process.env.NODE_ENV);
 before(done=>{
-	console.log('process', process.env.NODE_ENV);
+
 	mongoose.connect('mongodb://localhost/muber_test');
 	mongoose.connection
 		.once('open', ()=> done())

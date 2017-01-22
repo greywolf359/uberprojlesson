@@ -12,7 +12,9 @@ describe('the express app',()=>{
 				//console.log('app', app);
 				//console.log('request', request);
 
-
+				//this does appear in the console window and has a
+				//value of 'test'
+				console.log('process', process.env.NODE_ENV);
 				assert(response.body.hi === 'there');
 				done();
 			})
